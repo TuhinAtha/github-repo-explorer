@@ -18,7 +18,7 @@ export const Search = (props: SearchProps): JSX.Element => {
   }, [value])
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setStateValue(e.target.value)
+    setStateValue(e.target.value.trim())
   }
 
   const handleKeyUp = (e: React.KeyboardEvent<HTMLInputElement>) => {
