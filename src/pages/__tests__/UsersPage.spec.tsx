@@ -9,7 +9,7 @@ import { SearchProps } from '../../components/Search'
 
 const mockedUsersQuery = useFetchUsersQuery as jest.Mock<unknown>
 
-jest.mock('../../hooks/queries/useFetchusersQuery')
+jest.mock('../../hooks/queries/useFetchUsersQuery')
 jest.mock(
   '../../components/UserList',
   () =>
