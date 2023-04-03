@@ -1,10 +1,5 @@
 [[redirects]]
-  from = "/search/*"
-  to = "https://api.github.com/search/:splat"
-  status = 200
-  force = true
-
-  from = "/users/*"
-  to = "https://api.github.com/users/:splat"
+  from = "/api/*"
+  to = "https://api.github.com/:splat"
   status = 200
   force = true
