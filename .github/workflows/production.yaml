@@ -30,8 +30,8 @@ jobs:
           REACT_APP_GITHUB_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Copy netlify.yoml
-        run: cp ./netlify.yoml ./build
-        
+        run: ls -a
+
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v2.0
         with:
