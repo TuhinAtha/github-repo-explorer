@@ -25,6 +25,9 @@ jobs:
 
     - name: Build file
       run: npm run build
+      env:
+        REACT_APP_GITHUB_BASE_URL = ${{ vars.GITHUB_API_URL }}
+        REACT_APP_GITHUB_AUTH_TOKEN = ${{ secrets.GITHUB_TOKEN }}
 
     - name: Deploy to Netlify
       uses: nwtgck/actions-netlify@v2.0
