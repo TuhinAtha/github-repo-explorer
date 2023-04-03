@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "/search"
+  to = "https://api.github.com/search"
+  status = 200
+  force = true
+
+  from = "/users"
+  to = "https://api.github.com/users"
+  status = 200
+  force = true
+  
