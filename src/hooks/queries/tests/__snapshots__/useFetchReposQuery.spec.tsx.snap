@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hooks -> useFetchReposQuery Should work fine 1`] = `
+Array [
+  Object {
+    "description": "repo desctipiton 1",
+    "name": "repo1",
+    "stargazers_count": 100,
+  },
+]
+`;
