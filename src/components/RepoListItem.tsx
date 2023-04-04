@@ -9,7 +9,7 @@ export type RepoListItemProps = {
 
 export const RepoListItem = (props: RepoListItemProps): JSX.Element => {
   const { repo } = props
-
+  
   return (
     <ListItem
       data-testid="repoListItem"
@@ -26,7 +26,7 @@ export const RepoListItem = (props: RepoListItemProps): JSX.Element => {
           }
         }}
       >
-        <Stack direction="row">
+        <Stack direction="row" spacing={2}>
           <Typography
             variant="subtitle1"
             sx={{ flexGrow: 1 }}
@@ -35,10 +35,10 @@ export const RepoListItem = (props: RepoListItemProps): JSX.Element => {
             {repo.name}
           </Typography>
           <Stack direction="row" spacing={1} alignItems="center">
-            <Typography variant="subtitle1" data-testid="repoStars">
+            <Typography color="primary" variant="subtitle1" data-testid="repoStars">
               {repo.stargazers_count}
             </Typography>
-            <StarRoundedIcon fontSize="small" />
+            <StarRoundedIcon color="primary" fontSize="small" />
           </Stack>
         </Stack>
 

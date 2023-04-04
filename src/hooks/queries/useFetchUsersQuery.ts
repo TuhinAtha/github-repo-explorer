@@ -20,7 +20,7 @@ const useFetchUsersQuery = (props: UsersQueryProps) => {
       return response.data
     },
     enabled: Boolean(q),
-    keepPreviousData: true
+    keepPreviousData: Boolean(q)
   })
 
 }
